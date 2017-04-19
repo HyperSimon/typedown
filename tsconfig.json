@@ -1,0 +1,17 @@
+/**
+ * Copyright (c) 2017-present, Youchai, Inc.
+ * All rights reserved.
+ */
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react"
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

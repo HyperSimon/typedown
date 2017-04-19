@@ -1,0 +1,37 @@
+{
+  "name": "markdown-js",
+  "version": "1.0.0",
+  "description": "代码生成Markdown文本 - The code generates markdown text",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HyperSimon/markdown-js.git"
+  },
+  "author": "Simon Wang <hero12c@outlook.com> (https://github.com/HyperSimon)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HyperSimon/markdown-js/issues"
+  },
+  "homepage": "https://github.com/HyperSimon/markdown-js#readme",
+  "dependencies": {
+    "jest": "^19.0.2"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  },
+  "devDependencies": {
+    "typescript": "^2.2.2"
+  }
+}
