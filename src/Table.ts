@@ -1,9 +1,10 @@
+import MarkDownElement from "./MarkDownElement";
 /**
  * Copyright (c) 2017-present, Youchai, Inc.
  * All rights reserved.
  */
 
-export default class Table {
+export default class Table implements MarkDownElement{
   private headers: Array<Header> = []
   private rows: Array<Row> = []
 
