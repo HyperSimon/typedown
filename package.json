@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/HyperSimon/markdown-js#readme",
   "dependencies": {
+    "@types/lodash": "^4.14.62",
     "jest": "^19.0.2"
   },
   "jest": {
@@ -32,6 +33,7 @@
     ]
   },
   "devDependencies": {
+    "lodash": "^4.17.4",
     "typescript": "^2.2.2"
   }
 }
