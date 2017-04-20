@@ -5,8 +5,8 @@ import Bold from "../Bold";
  */
 
 test('test bold', () => {
-  expect(Bold.of('wangzhen').generate()).toBe('**wangzhen**')
+  expect(Bold.of('wangzhen')).toBe('**wangzhen**')
 
-  expect(Bold.of(null).generate()).toBe('')
-  expect(Bold.of('').generate()).toBe('****')
+  expect(Bold.of(null)).toBe('')
+  expect(Bold.of('')).toBe('****')
 })
