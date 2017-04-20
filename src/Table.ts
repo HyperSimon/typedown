@@ -45,18 +45,16 @@ export default class Table {
   }
 
   public generateRow(): string {
-    console.info(this.rows)
-    return this.rows.map(row => {
+    return this.rows.map((row, rowIndex) => {
       return row.values
           .map((value, index) => `${index === 0 ? '|' : ''}${this.toGrid(value)}`)
-          .join('') + '\n'
+          .join('') + (rowIndex === this.rows.length - 1 ? '' : '\n')
     }).join('')
   }
 
   private toGrid(value: string): string {
     return `${value + '|'}`
   }
-
 
   private styleLine(header: HeaderStyle) {
     switch (header) {

@@ -10,7 +10,12 @@ test('generate header', () => {
   table.addHeader('age', HeaderStyle.CENTER)
   table.addHeader('school', HeaderStyle.RIGHT)
 
-  expect(table.generate()).toBe('aa')
+  const exception =
+    `|name|age|school|
+|:--|:--:|--:|
+`
+
+  expect(table.generate()).toBe(exception)
 })
 
 test('generate row', () => {
@@ -19,7 +24,11 @@ test('generate row', () => {
   table.addRow('wangzhen', '21', '郑州市回民中学')
   table.addRow('liupei', '20', '郑州市第四中学')
 
-  expect(table.generate()).toBe('aa')
+  const exception =
+    `|wangzhen|21|郑州市回民中学|
+|liupei|20|郑州市第四中学|`
+
+  expect(table.generate()).toBe(exception)
 })
 
 test('generate table', () => {
@@ -32,6 +41,12 @@ test('generate table', () => {
   table.addRow('wangzhen', '21', '郑州市回民中学')
   table.addRow('liupei', '20', '郑州市第四中学')
 
-  expect(table.generate()).toBe('aa')
+  const exception =
+    `|name|age|school|
+|:--|:--:|--:|
+|wangzhen|21|郑州市回民中学|
+|liupei|20|郑州市第四中学|`
+
+  expect(table.generate()).toBe(exception)
 })
 
