@@ -52,6 +52,7 @@ H6.of('wangzhen') // output => ###### wangzhen
 
 ```
 
+[wangzhen](https://cdn.sspai.com/attachment/origin/2014/04/15/69493.jpg)
 
 # 当前进度
 
@@ -61,9 +62,9 @@ H6.of('wangzhen') // output => ###### wangzhen
 | Bold |Y|
 | Emphasize |Y|
 | Strike-through	 |N|
-| Inline Code	 |N|
+| Inline Code	 |Y|
 | Image |N|
-| List |N|
+| List |Y|
 | Blockquote |N|
 | H1 |Y|
 | H2 |Y|
