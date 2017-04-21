@@ -4,7 +4,7 @@ import Inline from "../Inline";
  * All rights reserved.
  */
 
-test('test emphasize', () => {
+test('test inline', () => {
   expect(Inline.of('wangzhen')).toBe('`wangzhen`')
 
   expect(Inline.of(null)).toBe('')

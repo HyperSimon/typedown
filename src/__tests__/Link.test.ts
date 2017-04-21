@@ -6,7 +6,7 @@ import Link from "../Link";
 
 
 
-test('test emphasize', () => {
+test('test link', () => {
   expect(Link.of('wangzhen', 'https://cdn.sspai.com/attachment/origin/2014/04/15/69493.jpg'))
     .toBe('[wangzhen](https://cdn.sspai.com/attachment/origin/2014/04/15/69493.jpg)')
 
