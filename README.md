@@ -16,9 +16,9 @@ table.addHeader('school', HeaderStyle.RIGHT)
 
 table.addRow('wangzhen', '21', '郑州市回民中学')
 table.addRow('liupei', '20', '郑州市第四中学')
-table.generate() 
+table.generate()
 
-// output 
+// output
 /**
 |name|age|school|
 |:--|:--:|--:|
@@ -26,37 +26,48 @@ table.generate()
 |liupei|20|郑州市第四中学|
 */
 ```
-渲染
-
-|name|age|school|
-|:--|:--:|--:|
-|wangzhen|21|郑州市回民中学|
-|liupei|20|郑州市第四中学|
 
 
 ### Bold
 ```typescript
 Bold.of('wangzhen').generate() // output -> **wangzhen**
 ```
-渲染
-> **wangzhen**
+
+### Emphasize 
+
+```typescript
+Emphasize.of('wangzhen') // output -> *wangzhen*
+```
+
+### Header
+
+```typescript
+
+H1.of('wangzhen') // output => # wangzhen
+H2.of('wangzhen') // output => ## wangzhen
+H3.of('wangzhen') // output => ### wangzhen
+H4.of('wangzhen') // output => #### wangzhen
+H5.of('wangzhen') // output => ##### wangzhen
+H6.of('wangzhen') // output => ###### wangzhen
+
+```
 
 
 # 当前进度
 
-| 标签 | 是否支持 | 
+| 标签 | 是否支持 |
 |:--:|:--:|
 | table | Y |
 | Bold |Y|
-| Emphasize |N|
+| Emphasize |Y|
 | Strike-through	 |N|
 | Inline Code	 |N|
 | Image |N|
 | List |N|
 | Blockquote |N|
-| H1 |N|
-| H2 |N|
-| H3 |N|
-| H4 |N|
-| H5 |N|
-| H6 |N|
+| H1 |Y|
+| H2 |Y|
+| H3 |Y|
+| H4 |Y|
+| H5 |Y|
+| H6 |Y|

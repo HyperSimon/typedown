@@ -1,8 +1,9 @@
 {
-  "name": "markdown-js",
-  "version": "1.0.0",
+  "name": "markdown-ts",
+  "version": "0.0.1",
   "description": "代码生成Markdown文本 - The code generates markdown text",
   "main": "index.js",
+  "types": "types.d.ts",
   "scripts": {
     "test": "jest"
   },
@@ -18,8 +19,14 @@
   "homepage": "https://github.com/HyperSimon/markdown-js#readme",
   "dependencies": {
     "@types/lodash": "^4.14.62",
-    "jest": "^19.0.2",
-    "kit-ts": "0.0.1"
+    "kit-ts": "0.0.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^19.2.2",
+    "jest-cli": "^19.0.2",
+    "lodash": "^4.17.4",
+    "ts-jest": "^19.0.10",
+    "typescript": "^2.2.2"
   },
   "jest": {
     "transform": {
@@ -32,9 +39,5 @@
       "js",
       "json"
     ]
-  },
-  "devDependencies": {
-    "lodash": "^4.17.4",
-    "typescript": "^2.2.2"
   }
 }

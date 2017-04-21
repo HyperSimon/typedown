@@ -1,12 +1,10 @@
-import MarkDownElement from "./MarkDownElement";
-import * as _ from 'lodash'
-import TextWrapper from "./TextWrapper";
-import Pair from "./kit/Pair";
-
 /**
  * Copyright (c) 2017-present, Youchai, Inc.
  * All rights reserved.
  */
+
+import TextWrapper from "./TextWrapper";
+import Pair from "./kit/Pair";
 
 export default class Bold extends TextWrapper {
   ensureWrapper(): Pair<string, string> {
