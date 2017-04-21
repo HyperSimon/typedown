@@ -6,13 +6,13 @@
 import TextWrapper from "./TextWrapper";
 import Pair from "./kit/Pair";
 
-export default class H6 extends TextWrapper {
+export default class Inline extends TextWrapper {
 
   ensureWrapper(): Pair<string, string> {
-    return new Pair('###### ', '');
+    return new Pair('`', '`');
   }
 
   static of(value: string) {
-    return new H6(value).generate()
+    return new Inline(value).generate()
   }
 }
