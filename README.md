@@ -1,4 +1,4 @@
-# markdown-js
+# typedown
 代码生成Markdown文本 - The code generates markdown text
 
 
@@ -30,7 +30,7 @@ table.generate()
 
 ### Bold
 ```typescript
-Bold.of('wangzhen').generate() // output -> **wangzhen**
+Bold.of('wangzhen') // output -> **wangzhen**
 ```
 
 ### Emphasize 
@@ -63,19 +63,23 @@ Del.of('wangzhen') // output => ~~wangzhen~~
 
 # 当前进度
 
-| 标签 | 是否支持 |
-|:--:|:--:|
-| table | Y |
-| Bold |Y|
-| Emphasize |Y|
-| Strike-through	 |Y|
-| Inline Code	 |Y|
-| Image |Y|
-| List |N|
-| Blockquote |N|
-| H1 |Y|
-| H2 |Y|
-| H3 |Y|
-| H4 |Y|
-| H5 |Y|
-| H6 |Y|
+|标签|对应元素|是否支持|
+|:--:|:--:|:--:|
+|table|Table|Y|
+|Bold|Bold|Y|
+|Emphasize|Emphasize|Y|
+| Strike-through |Del|Y|
+|Inline Code|Inline|Y|
+|Image|Image|Y|
+|List|working on|Y|
+|Blockquote|working on|Y|
+|H1|H1|Y|
+|H2|H2|Y|
+|H3|H3|Y|
+|H4|H4|Y|
+|H5|H5|Y|
+|H6|H6|Y|
+
+
+
+# Excemple
